@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --cor001: #ff9a6c;
+  --cor002: #263138;
+  --cor003: #ff725e;
+  --fonte-padrao: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: var(--cor001);
+  padding: 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  font-weight: 600;
+  padding: 32px;
+  text-decoration: none;
+}
+
+body {
+  color: var(--cor002);
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 80px 128px 80px;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-weight: 600px;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.paragrafo {
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+.botao {
+  background-color: var(--cor003);
+  color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+.botaoTransparente {
+  background-color: transparent;
+  color: var(--cor003);
+  padding: 16px 32px;
+  text-underline-offset: 4px;
+}
+
+.absoluto {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -10;
+}
